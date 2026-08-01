@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on Step hosts
+hosts:
+- host: https://step.com
+  documents:
+  - path: /.well-known/security.txt          # RFC 9116
+    status: 404
+  - path: /.well-known/openid-configuration   # OIDC discovery
+    status: 404
+  - path: /.well-known/oauth-authorization-server  # RFC 8414
+    status: 404
+  - path: /.well-known/api-catalog             # RFC 9727
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt                            # not well-known, recorded for completeness
+    status: 200
+    file: ../llms/step-llms.txt
+- host: https://api.step.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource     # RFC 9728
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+notes: >-
+  Step publishes no /.well-known/ discovery documents on its marketing host or on
+  api.step.com (which resolves but serves 404 at the root — it backs the mobile
+  app, not a public API). help.step.com serves a security.txt, but it is
+  Intercom's own (Canonical: https://app.intercom.com/.well-known/security.txt)
+  because the help center is Intercom-hosted, so it is not recorded as a Step
+  artifact. The one genuine machine-readable surface is https://step.com/llms.txt,
+  captured verbatim at llms/step-llms.txt.

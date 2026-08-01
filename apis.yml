@@ -1,8 +1,30 @@
 aid: step
 name: Step
-description: Step is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Step is an all-in-one mobile banking platform built for teens, young adults, and
+  families. The Step Visa Card is a secured card that builds credit history reported
+  to Experian, Equifax, and TransUnion, and teens can begin building credit before
+  they turn 18 through parent-managed accounts. Step also offers savings rewards,
+  cashback with partner brands, EarlyPay paycheck advances up to $250, commission-free
+  stock investing powered by DriveWealth, early direct deposit, and the Money 101
+  financial education hub. Banking services are provided by partner Evolve Bank &
+  Trust, Member FDIC. Founded in 2018 in Palo Alto by CJ MacDonald and Alexey
+  Kalinichenko, backed by General Catalyst, and acquired by Beast Industries. Step
+  publishes no public developer API; its programmatic surface is limited to a
+  consumer service status page and a site llms.txt.
 url: https://raw.githubusercontent.com/api-evangelist/step/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://images.ctfassets.net/bkmkssdu4exw/4AmtjJsDFh6FaE3A9yrjTt/5614b55c2840d91cc8b6913db3db86a6/Web_Meta_OG_Image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,46 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Banking
+- Teens
+- Credit Building
+- Payments
+- Investing
+- Consumer Finance
+- Financial Education
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/step-domain-security.yml
+- type: Website
+  url: https://step.com
+- type: Support
+  url: https://help.step.com
+- type: Blog
+  url: https://step.com/money-101
+- type: TermsOfService
+  url: https://step.com/policies/terms
+- type: PrivacyPolicy
+  url: https://step.com/policies/privacy
+- type: SignUp
+  url: https://step.com/signup
+- type: StatusPage
+  url: https://status.step.com
+- type: Lifecycle
+  url: lifecycle/step-lifecycle.yml
+- type: LLMsTxt
+  url: llms/step-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.step.com
+status_page: https://status.step.com
+status_page_platform: Atlassian Statuspage
+status_page_components: 14
+versioning: null
+deprecation: null
+sla: null
+notes: >-
+  Step publishes no public developer API, so there is no API versioning or
+  deprecation policy to capture. Its operational-transparency surface is a
+  public Atlassian Statuspage at status.step.com covering 14 consumer service
+  components (iOS/Android apps, card purchases, transfers, direct deposit,
+  stock and crypto trading, account creation, bank linking, help center, live
+  chat), with 90-day uptime history and dated incident reporting.
