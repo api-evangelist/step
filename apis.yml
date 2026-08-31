@@ -62,6 +62,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/beast-industries/
+  name: Beast Industries
+  x-relationship: acquired
+  x-evidence: "Founded in 2018 in Palo Alto by CJ MacDonald and Alexey Kalinichenko, backed by General Catalyst, and acquired by Beast Industries. Step publishes no public developer API; its programmatic surface is limited to a consumer service status pag"
 - type: DomainSecurity
   url: security/step-domain-security.yml
 - type: Website
